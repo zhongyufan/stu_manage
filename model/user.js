@@ -1,0 +1,1 @@
+"use strict";var mongoose=require("mongoose"),userSchema=new mongoose.Schema({username:{type:String,required:!0,minlength:2,maxlength:20},email:{type:String,unique:!0},password:{type:String,required:!0},role:{type:String,required:!0},state:{type:Boolean,default:!0},image:{type:String,default:""}}),User=mongoose.model("User",userSchema);module.exports=User;
